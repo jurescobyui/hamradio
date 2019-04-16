@@ -1,0 +1,83 @@
+/* 64em is also 1028px when basefont is 16px */
+/*topbar */
+@media only screen and (min-width: 768px ) {
+     #brand, .topnav, main{
+        max-width:1000px;
+        margin: 0 auto;
+      /*  border: thin solid cyan;*/
+    }
+    #titleText{
+        margin:0;
+        padding:0;
+        font-family:playball;
+        font-size:3em;
+    }
+ 
+  #brand{
+      margin-top:15px;
+  }
+  .fixedHeader{
+      background-color: #EFF3F5;
+    width:100%;
+    /*position:fixed;
+    top:0;
+    z-index: 900;*/
+
+  }
+  /*article contents grid*/
+  .grid-container{  
+    grid-template-columns:32% 32% 32%;
+    
+  }
+
+
+#googleMap{
+  width:50%;
+  
+}
+}/*end of min-width 768*/
+@media only screen and (max-width: 768px ) { /*max-width: 64em */
+
+/*topbar */
+
+ 
+/* nav styles */
+   .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+ 
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+/*end of nav styles*/ 
+    
+
+   
+
+  
+  
+  
+  
+
+}/*end of media query*/

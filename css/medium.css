@@ -1,0 +1,62 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width:35rem) {
+
+  
+  /*2nd max-width 600*/
+  #topbar{
+      margin-top:0px;
+      display:block;
+      padding:1px 10px;
+
+  }
+  #topbar a{
+     color:white;
+  }
+
+  .grid-container{
+   
+    grid-template-columns: auto  auto;
+   
+}
+
+  h1{
+    font-size:2em;
+  }
+  h2{
+    font-size:1.7em;
+  }
+  h3{
+    font-size:1.6em;
+  }
+.small-contact{
+    display:none;
+}
+
+ul.breadcrumb li {
+   
+    font-size: 16px;
+  }
+
+  .table-responsive{
+    width:60%;
+    margin: 0 auto;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+   
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+   
+    width: 75%;
+   
+  }
+
+  #googleMap{
+    width:65%;
+    margin:0 auto;
+  }
+}/*end of media query*/

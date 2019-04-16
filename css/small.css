@@ -1,0 +1,440 @@
+/* mobile view */
+#topbar, #brand, .topnav, main, footer{
+    min-width:320px;
+}
+
+body{
+    font-family: raleway, Helvetica, sans-serif;
+    color:#2E2E2E;
+    background-color:#EFF3F5;
+}
+
+
+.clearfix{
+    clear:both;
+}
+main{
+    /*margin-top:250px;*/
+}
+#topbar{
+   margin-bottom:8px;
+   display:none;
+  
+    background-color:#243C4F;
+    color:white;
+}
+/*social media icons*/
+.social{
+    float:right;
+}
+
+#titleText{
+    margin:0;
+    padding:0;
+    font-family:playball;
+    font-size:1.9em;
+}
+
+#brand{
+    margin-top:10px;
+    text-align:center;
+     line-height: 0.5;
+}
+
+.topnav {
+    overflow: hidden;
+    
+   /* background-color: #333;*/
+  
+  }
+  
+  .hidden{
+      display:none;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2E2E2E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  .active {
+    background-color: #00ADF1;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #2E2E2E;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #008EC6;
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #243C4F;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .img-responsive{
+      width:100%;
+  }
+ 
+
+  footer{
+    background-color:#243C4F;
+    text-align:center;
+    color:white;
+    padding:15px;
+}
+
+/**********bread crumb styles***********/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+  
+
+  text-align:center;
+  margin:0;
+
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 13px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*****end of breadcrumb style*****/
+.slider{
+    position:relative;
+}
+/* overlay*/
+.overlay{
+    height:10%;
+    width:100%;
+    margin:0 auto;
+    border:thin solid cyan;
+    position:absolute;
+   bottom:0px;
+   
+    
+}
+.btn {
+   position: absolute;
+   right:45%;
+   bottom:10%;
+   border-radius: 15px;
+   padding:12px;
+}
+h1,h2,h3,h4{
+    text-align:center;
+    font-size:0.8em;
+}
+h1{
+  font-size:1em;
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto ;
+    grid-gap:10px;
+    padding:10px;
+}
+.grid-container >div{
+    width:100%;
+    text-align:center;
+    
+   /* border:thin solid pink;*/
+}
+.grid-container p{
+    padding:5px;
+}
+
+/******* slider css******* */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-img{
+  width:100%;
+}
+
+
+
+/* Caption text */
+.text {
+ /*color: #f2f2f2;*/
+ color:white;
+ 
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 36px;
+  width: 98%;
+  text-align: center;
+  
+  background-color:#2e2e2e;
+  opacity:0.6;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active{
+  /*background-color: #717171;*/
+  background-color: #00ADF1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/***** call to action button css**********/
+.cta-btn {
+  position: absolute;
+  top:10px;
+  right:10px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 2px 1px #666666;
+  -webkit-box-shadow: 2px 5px 7px #666666;
+  -moz-box-shadow: 2px 5px 7px #666666;
+  box-shadow: 2px 5px 7px #666666;
+  color: #ffffff;
+  font-size: 26px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  
+
+}
+
+.cta-btn:hover {
+  background: #00ADF1;
+  background-image: -webkit-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -moz-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -ms-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -o-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: linear-gradient(to bottom, #00ADF1, #2B475E);
+  text-decoration: none;
+}
+/*******end cta button****/
+
+table{
+  width: 100%;
+  text-align:center;
+  
+   border:collapse;
+  
+}
+.table-responsive{
+  width:95%;
+  margin: 0 auto;
+}
+table, th, td {
+  border: 1px solid#C6C9C8;
+  border-collapse: collapse;
+  
+ 
+}
+th, td {
+  padding: 10px;
+}
+tr:nth-child(odd){
+  background-color: #e7f0ed;;
+}
+
+tr:nth-child(even){
+  background-color: #e7ffed;
+}
+.shaded{
+background-color:#628ca6;
+}
+
+thead tr{
+    background-color:#628ca6 !important;
+    font-weight:bolder;
+    font-size:1.5rem;
+    color:white;
+}
+tbody{
+  font-weight: bold;
+}
+tfoot tr {
+  background-color: #7FB9C2  !important;
+  font-weight:normal;
+}
+
+/******************************
+    form styles
+    ******************************/
+   
+    .required{ color:red;}
+     /* Style inputs, select elements and textareas */
+input[type=text], select, textarea, input[type=email],input[type=tel],input[type=number],input[type=date], input[type=list]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+ 
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  form button {
+    background-color: #00ADF1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  /* Style the container */
+  .form_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#googleMap{
+  width:100%;
+}
+
+.success {
+  width:100%;
+  height:50px;
+
+  margin-bottom: 15px;
+  padding:15px;
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+  text-align:center;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  /*********** end of slider css *************/
+  
